@@ -15,7 +15,7 @@
 		446B8F9F252D9F5800B4776A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446B8F9D252D9F5800B4776A /* LaunchScreen.storyboard */; };
 		446B8FAA252D9F5800B4776A /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B8FA9252D9F5800B4776A /* TestAppTests.swift */; };
 		446B8FB5252D9F5800B4776A /* TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B8FB4252D9F5800B4776A /* TestAppUITests.swift */; };
-		44A74D1925347C7200884B2C /* Dangerfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A74D1825347C7200884B2C /* Dangerfile.swift */; };
+		44A74D21253480BF00884B2C /* Dangerfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A74D20253480BF00884B2C /* Dangerfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		446B8FB0252D9F5800B4776A /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		446B8FB4252D9F5800B4776A /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		446B8FB6252D9F5800B4776A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44A74D1825347C7200884B2C /* Dangerfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dangerfile.swift; sourceTree = "<group>"; };
+		44A74D20253480BF00884B2C /* Dangerfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dangerfile.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 		446B8F86252D9F5600B4776A = {
 			isa = PBXGroup;
 			children = (
-				44A74D1725347C7200884B2C /* Danger */,
+				44A74D20253480BF00884B2C /* Dangerfile.swift */,
 				446B8F91252D9F5600B4776A /* TestApp */,
 				446B8FA8252D9F5800B4776A /* TestAppTests */,
 				446B8FB3252D9F5800B4776A /* TestAppUITests */,
@@ -129,14 +129,6 @@
 				446B8FB6252D9F5800B4776A /* Info.plist */,
 			);
 			path = TestAppUITests;
-			sourceTree = "<group>";
-		};
-		44A74D1725347C7200884B2C /* Danger */ = {
-			isa = PBXGroup;
-			children = (
-				44A74D1825347C7200884B2C /* Dangerfile.swift */,
-			);
-			path = Danger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A74D1925347C7200884B2C /* Dangerfile.swift in Sources */,
+				44A74D21253480BF00884B2C /* Dangerfile.swift in Sources */,
 				446B8F97252D9F5600B4776A /* ViewController.swift in Sources */,
 				446B8F93252D9F5600B4776A /* AppDelegate.swift in Sources */,
 				446B8F95252D9F5600B4776A /* SceneDelegate.swift in Sources */,
