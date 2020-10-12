@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         self.displayText(text: "danhger-swift", times: 5)
         
         self.displayText(text: "danhger-swift3546", times: 5)
+        print("code merged")
 
     }
 
