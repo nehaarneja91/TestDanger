@@ -14,8 +14,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("add log")
+        print("12334444444 12334444444 123344444441233444444412334444444 1233444444412334444444123344444441233444444412334444444 1233444444412334444444123344444441233444444412334444444")
+        
+        self.displayText(text: "danhger-swift", times: 5)
     }
 
-
+    func displayText(text: String,times: Int)  {
+        print("\(text)")
+    }
 }
 
