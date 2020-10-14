@@ -39,3 +39,5 @@ if danger.github != nil {
     }
 }
 message("🎉 The PR added 1 files changed.")
+
+markdown("![Alt iphone](https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-3e2ftda9jabdn5q9ffti1emnc3-20170929123140.Medi.jpeg)")  
