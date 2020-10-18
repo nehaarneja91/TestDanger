@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,9 @@
 		446B8F9F252D9F5800B4776A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 446B8F9D252D9F5800B4776A /* LaunchScreen.storyboard */; };
 		446B8FAA252D9F5800B4776A /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B8FA9252D9F5800B4776A /* TestAppTests.swift */; };
 		446B8FB5252D9F5800B4776A /* TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446B8FB4252D9F5800B4776A /* TestAppUITests.swift */; };
-		44A74D21253480BF00884B2C /* Dangerfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A74D20253480BF00884B2C /* Dangerfile.swift */; };
+		44A74E12253CAF9300884B2C /* Danger in Frameworks */ = {isa = PBXBuildFile; productRef = 44A74E11253CAF9300884B2C /* Danger */; };
+		44A74E13253CAF9300884B2C /* Danger in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 44A74E11253CAF9300884B2C /* Danger */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		44A74E38253CBB5900884B2C /* SwiftLintFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 44A74E37253CBB5900884B2C /* SwiftLintFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		44A74E14253CAF9300884B2C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				44A74E13253CAF9300884B2C /* Danger in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		446B8F8F252D9F5600B4776A /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		446B8F92252D9F5600B4776A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +66,6 @@
 		446B8FB0252D9F5800B4776A /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		446B8FB4252D9F5800B4776A /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		446B8FB6252D9F5800B4776A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44A74D20253480BF00884B2C /* Dangerfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dangerfile.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A74E38253CBB5900884B2C /* SwiftLintFramework in Frameworks */,
+				44A74E12253CAF9300884B2C /* Danger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +98,6 @@
 		446B8F86252D9F5600B4776A = {
 			isa = PBXGroup;
 			children = (
-				44A74D20253480BF00884B2C /* Dangerfile.swift */,
 				446B8F91252D9F5600B4776A /* TestApp */,
 				446B8FA8252D9F5800B4776A /* TestAppTests */,
 				446B8FB3252D9F5800B4776A /* TestAppUITests */,
@@ -141,12 +157,17 @@
 				446B8F8B252D9F5600B4776A /* Sources */,
 				446B8F8C252D9F5600B4776A /* Frameworks */,
 				446B8F8D252D9F5600B4776A /* Resources */,
+				44A74E14253CAF9300884B2C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TestApp;
+			packageProductDependencies = (
+				44A74E11253CAF9300884B2C /* Danger */,
+				44A74E37253CBB5900884B2C /* SwiftLintFramework */,
+			);
 			productName = TestApp;
 			productReference = 446B8F8F252D9F5600B4776A /* TestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +240,10 @@
 				Base,
 			);
 			mainGroup = 446B8F86252D9F5600B4776A;
+			packageReferences = (
+				44A74E10253CAF9300884B2C /* XCRemoteSwiftPackageReference "swift" */,
+				44A74E36253CBB5900884B2C /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = 446B8F90252D9F5600B4776A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A74D21253480BF00884B2C /* Dangerfile.swift in Sources */,
 				446B8F97252D9F5600B4776A /* ViewController.swift in Sources */,
 				446B8F93252D9F5600B4776A /* AppDelegate.swift in Sources */,
 				446B8F95252D9F5600B4776A /* SceneDelegate.swift in Sources */,
@@ -588,6 +612,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		44A74E10253CAF9300884B2C /* XCRemoteSwiftPackageReference "swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danger/swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.6.1;
+			};
+		};
+		44A74E36253CBB5900884B2C /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.40.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		44A74E11253CAF9300884B2C /* Danger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44A74E10253CAF9300884B2C /* XCRemoteSwiftPackageReference "swift" */;
+			productName = Danger;
+		};
+		44A74E37253CBB5900884B2C /* SwiftLintFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44A74E36253CBB5900884B2C /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = SwiftLintFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 446B8F87252D9F5600B4776A /* Project object */;
 }
