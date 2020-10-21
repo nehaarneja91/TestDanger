@@ -12,6 +12,7 @@ import Danger
 let danger = Danger()
 
 // Pull request size
+SwiftLint.lint(inline: true)  
 let bigPRThreshold = 500
 let additions = danger.github.pullRequest.additions!
 let deletions = danger.github.pullRequest.deletions!
