@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         self.displayText(text: "danhger-swift3546", times: 5)
         print("code merged & jenkins file changed")
         print("code mer++++")
+        print("ghjghgh")
 
     }
 
