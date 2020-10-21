@@ -14,13 +14,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("add log")
-        print("12334444444 12334444444 123344444441233444444412334444444 1233444444412334444444123344444441233444444412334444444 1233444444412334444444123344444441233444444412334444444")
+        print("12334444444 12334444444 123344444441233444444412334444444 1 334444444 123344444441233444444412334444444 1 334444444 123344444441233444444412334444444 1 ")
         
         self.displayText(text: "danhger-swift", times: 5)
         
         self.displayText(text: "danhger-swift3546", times: 5)
         print("code merged & jenkins file changed")
-        print("code mer");
+        print("code mer++++")
 
     }
 
