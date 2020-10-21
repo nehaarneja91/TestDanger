@@ -48,4 +48,6 @@ if testFiles.isEmpty {
 message("🎉 The PR added \(additions) and removed \(deletions) lines. 🗂 \(changedFiles) files changed.")
 
 
-markDown("# **Danger** : ")
+//markDown("# **Danger** : ")
+
+markdown("![Alt iphone](https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-3e2ftda9jabdn5q9ffti1emnc3-20170929123140.Medi.jpeg)")
